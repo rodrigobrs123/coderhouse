@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import NavbarBootstrap from './components/js/NavBarBS';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
