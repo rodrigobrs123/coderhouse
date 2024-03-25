@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "name": "ecommerce-coderhouse",
-=======
-  "name": "coderhouse_rodrigo_app1",
->>>>>>> a59eba5c8f8eda861dc065036dd0af19f5d00334
   "version": "0.1.0",
   "private": true,
   "dependencies": {
