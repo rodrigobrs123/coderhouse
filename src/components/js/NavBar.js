@@ -1,23 +1,17 @@
 import React from 'react';
-//import { NavLink } from "react-bootstrap";
-import {Nav, NavLink, NavMenu} from "./NavBarStyle"
+import {Nav, NavLink, NavMenu} from "./NavBarStyle";
+import CartWidget from "./CartWidget";
 
 
-/*
-function App(){
-
-    <NavBar/>
-    <h2>TESTE</h2> 
-
-}
-*/
 
 export const NavBar = () => {
 
     return (
+
+      
         <Nav>
-            <NavMenu>
-                <NavLink to="/" activeStyle>
+           <NavMenu>
+             <NavLink to="/" activeStyle>
                     HOME
                 </NavLink>
             </NavMenu>
