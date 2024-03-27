@@ -1,6 +1,7 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget from "./CartWidget";
+import ItemListenerContainer from "./ItemListContainer";
 
 export const NavbarBootstrap = () =>{
 
@@ -28,6 +29,7 @@ export const NavbarBootstrap = () =>{
                       </NavDropdown.Item>
                  </NavDropdown>
                  <Nav.Link href="#link"><CartWidget></CartWidget> </Nav.Link>
+                 <Nav.Link href="#link"> <ItemListenerContainer greeting="100" /> </Nav.Link>
                   </Nav>
                 </Navbar.Collapse>
               </Container>

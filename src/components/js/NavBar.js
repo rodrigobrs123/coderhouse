@@ -1,6 +1,6 @@
 import React from 'react';
 import {Nav, NavLink, NavMenu} from "./NavBarStyle";
-import CartWidget from "./CartWidget";
+
 
 
 
