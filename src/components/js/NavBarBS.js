@@ -2,8 +2,10 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget from "./CartWidget";
 import ItemListenerContainer from "./ItemListContainer";
+import {Link} from 'react-router-dom';
 
 export const NavbarBootstrap = () =>{
+
 
              return (
 
@@ -18,7 +20,7 @@ export const NavbarBootstrap = () =>{
                      <Nav.Link href="#home">Ofertas do Dia</Nav.Link>
                     <Nav.Link href="#link">Cadastro</Nav.Link>
                     <NavDropdown title="Minha Conta" id="basic-nav-dropdown">
-                      <NavDropdown.Item href="#action/3.1">Meus Pedidos</NavDropdown.Item>
+                      <NavDropdown.Item  to="/meus-pedidos" >/meus-pedidos </NavDropdown.Item>
                       <NavDropdown.Item href="#action/3.2">
                         Vale Troca
                       </NavDropdown.Item>
@@ -29,8 +31,9 @@ export const NavbarBootstrap = () =>{
                       </NavDropdown.Item>
                  </NavDropdown>
                  <Nav.Link href="#link"><CartWidget></CartWidget> </Nav.Link>
-                 <Nav.Link href="#link"> <ItemListenerContainer greeting="100" /> </Nav.Link>
-                  </Nav>
+              
+            
+                 </Nav>
                 </Navbar.Collapse>
               </Container>
 
