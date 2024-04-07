@@ -20,7 +20,8 @@ export const NavbarBootstrap = () =>{
                      <Nav.Link href="#home">Ofertas do Dia</Nav.Link>
                     <Nav.Link href="#link">Cadastro</Nav.Link>
                     <NavDropdown title="Minha Conta" id="basic-nav-dropdown">
-                      <NavDropdown.Item  to="/meus-pedidos" >/meus-pedidos </NavDropdown.Item>
+                      <NavDropdown.Item ><Link to="/meus-pedidos">Meus Pedidos</Link>
+                         </NavDropdown.Item>
                       <NavDropdown.Item href="#action/3.2">
                         Vale Troca
                       </NavDropdown.Item>

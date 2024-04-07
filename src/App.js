@@ -2,10 +2,8 @@ import './App.css';
 import NavbarBootstrap from './components/js/NavBarBS';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Pedido from "./components/js/Pedido";
-import Item from './components/js/Item';
-import ItemList from './components/js/ItemList';
-import { BrowserRouter , Route, Routes } from 'react-router-dom';
-//import celularImagem from './images/celular_02.jpg';
+import ItemList from "./components/js/ItemList";
+import { BrowserRouter , Route, Routes, useLocation  } from 'react-router-dom';
 
 function App() {
 
@@ -15,24 +13,41 @@ function App() {
 
 
   return (
-    <div className="App">
+      <div className="App">
+<BrowserRouter>
+          <Routes>
+            <Route path="/" element={<InitialPage/>}></Route>
+            <Route path="/meus-pedidos" element={<ItemList/>} />
+         </Routes> 
+         <Navigation/>
+
       <header className="App-header">
-      <ItemList></ItemList>
-       <Pedido stockItens={10} initialValue={1}></Pedido>
-        <NavbarBootstrap>
-        </NavbarBootstrap>
-    </header>
+      </header>
 
-    <BrowserRouter>
-    <Routes>
-          <Route exact path="/meus-pedidos" element={<Item/>} />
-          {/* Add more routes as needed */}
-    </Routes>
-   </BrowserRouter>
-
-     
-    </div>
+  </BrowserRouter> 
+      </div> 
+ 
   );
 }
 
+function Navigation() {
+  const location = useLocation();
+
+  // Check if the current route is not "/teste"
+  if (location.pathname !== "/meus-pedidos") {
+    return (
+ 
+      <NavbarBootstrap>
+      </NavbarBootstrap>      );
+  }
+}
+
+
+function InitialPage() {
+  return (
+    <div>
+      <Pedido stockItens={10} initialValue={1} />
+    </div>
+  );
+}
 export default App;
