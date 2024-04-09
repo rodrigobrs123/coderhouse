@@ -1,7 +1,7 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget from "./CartWidget";
-import ItemListenerContainer from "./ItemListContainer";
+//import ItemListenerContainer from "./ItemListContainer";
 import {Link} from 'react-router-dom';
 
 export const NavbarBootstrap = () =>{
